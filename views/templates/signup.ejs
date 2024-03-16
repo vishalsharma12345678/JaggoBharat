@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JagoBharat - Login</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      .logo {
+        width: 10vw;
+        height: 80%;
+        margin-left: 7rem;
+        margin-top: 0.5rem;
+        border-radius: 10%;
+      }
+
+      @media (max-width: 850px) {
+        .logo {
+          width: 17vw;
+          margin-left: 3rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      @media (max-width: 1100px) {
+        .logo {
+          width: 13vw;
+          margin-left: 3rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .logo {
+          width: 20vw;
+          margin-left: 3rem;
+          margin-top: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="login-page">
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img src="../Images/logo.jpg" class="logo" />
+      <ul>
+        <li><a class="#" href="../index.html">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#teams">Teams</a></li>
+        <li><a href="../index.html#gallery">Gallery</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+
+    <div id="container" class="container">
+      <!-- FORM SECTION -->
+      <div class="row">
+        <!-- SIGN UP -->
+        <div class="col align-items-center flex-col sign-up">
+          <div class="form-wrapper align-items-center">
+            <div class="form sign-up">
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input type="text" placeholder="Username" />
+              </div>
+              <div class="input-group">
+                <i class="bx bx-mail-send"></i>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" placeholder="Password" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" placeholder="Confirm password" />
+              </div>
+              <button>Sign up</button>
+              <p>
+                <span> Already a Member? </span>
+                <b>
+                  <a href="/login">Sign in</a>
+                </b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row content-row">
+        <!-- SIGN IN CONTENT -->
+        <div class="col align-items-center flex-col">
+          <div class="text sign-in">
+            <h2>Welcome</h2>
+          </div>
+          <div class="img sign-in"></div>
+        </div>
+        <!-- END SIGN IN CONTENT -->
+        <!-- SIGN UP CONTENT -->
+        <div class="col align-items-center flex-col">
+          <div class="img sign-up"></div>
+          <div class="text sign-up">
+            <h2>Become a Member</h2>
+          </div>
+        </div>
+        <!-- END SIGN UP CONTENT -->
+      </div>
+      <!-- END CONTENT SECTION -->
+    </div>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>
